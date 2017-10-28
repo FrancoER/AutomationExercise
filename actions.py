@@ -30,6 +30,7 @@ def click(element):
 
 
 def write(element,imput):
+    element.clear()
     element.send_keys(imput)
 
 def getEle(locator,type):

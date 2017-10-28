@@ -9,6 +9,7 @@ from selenium import webdriver
 # create a new Firefox session
 actions.getDriver("Chrome")
 
+#testing git
 
 # navigate to the application home page
 actions.navigate(elements.Google)

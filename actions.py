@@ -33,14 +33,15 @@ def write(element,imput):
     element.send_keys(imput)
 
 def getEle(locator,type):
+    global driver
     if type == "id":
         elem = driver.find_element_by_id(locator)
         return elem
     elif type == "class":
         elem = driver.find_element_by_class_name(locator)
         return elem
-    elif type == "class":
-        elem = driver.find_element_by_class_name(locator)
+    elif type == "name":
+        elem = driver.find_element_by_name(locator)
         return elem
 
 

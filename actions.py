@@ -43,7 +43,9 @@ def getEle(locator,type):
     elif type == "name":
         elem = driver.find_element_by_name(locator)
         return elem
-
+    elif type == "xpath":
+        elem = driver.find_element_by_xpath(locator)
+        return elem
 
 def exit():
     driver.quit()
